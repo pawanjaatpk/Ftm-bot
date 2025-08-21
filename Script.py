@@ -271,7 +271,7 @@ Nᴀᴍᴇ : {}
 
 Mᴇꜱꜱᴀɢᴇ : <b>{}</b>"""
     
-    CAPTION = """<b><a href="https://t.me/ftmmovieskiduniya">{file_name}</a></b>\n\n<b>⚜️ Powered By : <a href=https://t.me/ftmdeveloperz>[Fᴛᴍ Dᴇᴠᴇʟᴏᴘᴇʀᴢ]</a></b>"""
+    CAPTION = """<b><a href="https://t.me/mv_backup">{file_name}</a></b>\n\n<b>⚜️ Powered By : <a href=https://t.me/mv_backup>[Fᴛᴍ Dᴇᴠᴇʟᴏᴘᴇʀᴢ]</a></b>"""
 
     IMDB_TEMPLATE_TXT = """
 <b>🏷 Title</b>: <a href={url}>{title}</a>
