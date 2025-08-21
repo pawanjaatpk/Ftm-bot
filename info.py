@@ -56,8 +56,8 @@ MULTI_FSUB = [int(channel_id) for channel_id in environ.get('MULTI_FSUB', '-1002
 # ============================
 # Payment Configuration
 # ============================
-QR_CODE = environ.get('QR_CODE', 'https://telegra.ph/file/d1f7812a3d36a179381e5.jpg')
-OWNER_UPI_ID = environ.get('OWNER_UPI_ID', 'ftmdeveloperz@ybl')
+QR_CODE = environ.get('QR_CODE', 'https://donate.gowebi.site/')
+OWNER_UPI_ID = environ.get('OWNER_UPI_ID', 'pawankumar178@upi')
 
 # ============================
 # MongoDB Configuration
@@ -65,7 +65,7 @@ OWNER_UPI_ID = environ.get('OWNER_UPI_ID', 'ftmdeveloperz@ybl')
 DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://ftm:ftm@cluster0.vj4gc.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DATABASE_URI2 = environ.get('DATABASE_URI2', "mongodb+srv://ftm:ftm@cluster0.xotfi.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'ftmbotzx')
+COLLECTION_NAME = environ.get('COLLECTION_NAME', 'mv_backup')
 
 # ============================
 # Movie Notification & Update Settings
@@ -77,7 +77,7 @@ CAPTION_LANGUAGES = ["Bhojpuri", "Hindi", "Bengali", "Tamil", "English", "Bangla
 # ============================
 # Verification Settings
 # ============================
-VERIFY = bool(environ.get('VERIFY', True))  # Verification On (True) / Off (False)
+VERIFY = bool(environ.get('VERIFY', False))  # Verification On (True) / Off (False)
 FTMBOTZX_VERIFY_EXPIRE = int(environ.get('FTMBOTZX_VERIFY_EXPIRE', 48))  # Add time in hours
 FTMBOTZX_VERIFIED_LOG = int(environ.get('FTMBOTZX_VERIFIED_LOG', '-1002428720041'))  # Log channel id (make sure bot is admin)
 HOW_TO_VERIFY = environ.get('HOW_TO_VERIFY', 'https://t.me/ftmbotzx/2')  # How to open tutorial link for verification
@@ -86,19 +86,19 @@ HOW_TO_VERIFY = environ.get('HOW_TO_VERIFY', 'https://t.me/ftmbotzx/2')  # How t
 # Link Shortener Configuration
 # ============================
 IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', True))
-SHORTLINK_URL = environ.get('SHORTLINK_URL', 'modijiurl.com')
-SHORTLINK_API = environ.get('SHORTLINK_API', '79a8621baf4ba2a396eed551eb5d89634d64998f')
-TUTORIAL = environ.get('TUTORIAL', 'https://t.me/ftmbotzx/2')  # Tutorial video link for opening shortlink website
+SHORTLINK_URL = environ.get('SHORTLINK_URL', 'shortly.sbs')
+SHORTLINK_API = environ.get('SHORTLINK_API', 'df9eb628bc7378381cd34071f325132a511be218')
+TUTORIAL = environ.get('TUTORIAL', 'https://t.me/+KxXDuxPYkV5mOTE1')  # Tutorial video link for opening shortlink website
 IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', True))
 
 # ============================
 # Channel & Group Links Configuration
 # ============================
-GRP_LNK = environ.get('GRP_LNK', 'https://t.me/ftmbotzx_support')
-CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/ftmmovieskiduniya')
-OWNER_LNK = environ.get('OWNER_LNK', 'https://t.me/ftmdeveloperz')
-FTMBOTZX_MOVIE_UPDATE_CHANNEL_LNK = environ.get('FTMBOTZX_MOVIE_UPDATE_CHANNEL_LNK', 'https://t.me/ftmmovieskiduniya')
-OWNERID = int(os.environ.get('OWNERID', '7744665378'))  # Replace with the actual admin ID
+GRP_LNK = environ.get('GRP_LNK', 'https://t.me/mv_backup')
+CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/mv_backup')
+OWNER_LNK = environ.get('OWNER_LNK', 'https://t.me/expertbotzz')
+FTMBOTZX_MOVIE_UPDATE_CHANNEL_LNK = environ.get('FTMBOTZX_MOVIE_UPDATE_CHANNEL_LNK', 'https://t.me/mv_backup')
+OWNERID = int(os.environ.get('OWNERID', '5772711610'))  # Replace with the actual admin ID
 
 # ============================
 # User Configuration
@@ -114,8 +114,8 @@ NO_RESULTS_MSG = bool(environ.get("NO_RESULTS_MSG", True))  # True if you want n
 MAX_B_TN = environ.get("MAX_B_TN", "8")
 MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
 PORT = environ.get("PORT", "8080")
-MSG_ALRT = environ.get('MSG_ALRT', 'Made with love 😘 by @FᴛᴍDᴇᴠᴇʟᴏᴘᴇʀᴢ . Share & Support Us ♥️')
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/ftmbotzx_support')  # Support group link (make sure bot is admin)
+MSG_ALRT = environ.get('MSG_ALRT', 'Made with love 😘 by @Expertbotzz . Share & Support Us ♥️')
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/prsupportgroup')  # Support group link (make sure bot is admin)
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "True")), True)
 IMDB = is_enabled((environ.get('IMDB', "True")), True)
 AUTO_FFILTER = is_enabled((environ.get('AUTO_FFILTER', "True")), True)
@@ -139,7 +139,7 @@ EMOJI_MODE = bool(environ.get('EMOJI_MODE', True))  # Emoji status On (True) / O
 # ============================
 # Bot Configuration
 # ============================
-auth_grp = environ.get('AUTH_GROUP', '-1002282331890')
+auth_grp = environ.get('AUTH_GROUP', '-1001892668002')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 REQST_CHANNEL = int(reqst_channel) if reqst_channel and id_pattern.search(reqst_channel) else None
